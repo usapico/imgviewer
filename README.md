@@ -5,7 +5,7 @@ PNG / WebP / JPG / JPEG / GIF を開ける、Windows用の小さな画像ビュ�
 **配布元：[USAPICO](https://usapico.com/)**  
 **ダウンロード先：[GitHub Releases](https://github.com/usapico/imgviewer/releases/latest)**
 
-配布ファイルはReleasesに掲載します。ZIPを展開して `ImgViewer.exe` を起動してください。インストールや追加ランタイムは不要です。
+ZIPを展開して `ImgViewer.exe` を起動してください。インストールや追加ランタイムは不要です。[利用条件](LICENSE.txt) に同意のうえご利用ください。
 
 ## 主な機能
 

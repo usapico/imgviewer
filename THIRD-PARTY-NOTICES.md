@@ -10,3 +10,5 @@ ImgViewerのWebP読み込みには、Google / WebM Projectの **libwebp 1.6.0** 
 これらの条件は、ImgViewer本体の [利用条件](LICENSE.txt) とは別に適用されます。
 
 PNGの読み込みにはWindows Imaging Component、JPEG・GIFの読み込みにはGDI+を使用しています。これらはWindows標準の機能です。
+
+Microsoft C/C++ランタイムの一部を実行ファイルに組み込んでいます。該当部分の利用条件は [LICENSE.txt](LICENSE.txt) に記載しています。
