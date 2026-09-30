@@ -1,0 +1,33 @@
+libwebp version and upstream patch provenance
+
+ImgViewer uses the decoder and demuxer from the official libwebp 1.6.0 release.
+The encoder and upstream command-line tools are not included in the executable.
+
+Base release:
+https://chromium.googlesource.com/webm/libwebp/+/refs/tags/v1.6.0
+
+Official source archive:
+https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.6.0.tar.gz
+
+The following official upstream changes are applied to the 1.6.0 source.
+Surrounding whitespace and context were adapted to the release source.
+
+1. Limit the initial Huffman table allocation for images with many tree groups.
+   https://github.com/webmproject/libwebp/commit/5755839a4772de6123628bb0c61996d7c42a0454
+
+2. Apply that cap using the actual group count, and release a redundant
+   Huffman image when only one group is used.
+   https://github.com/webmproject/libwebp/commit/36f3445278282d84f79e45c9f8ebc9afb10c1dcd
+
+3. Reject truncated Huffman-table streams before allocating code lengths,
+   groups, and tables.
+   https://github.com/webmproject/libwebp/commit/0ff181e8d0b7ef41e45c1c292324828bab0a34dd
+
+4. Calculate the animation disposal-buffer offset using 64-bit arithmetic.
+   https://github.com/webmproject/libwebp/commit/d29e00aa708243ff9945989a0e4e3c8cf6dbf152
+
+These patches do not guarantee that every malformed image can be handled safely.
+Future releases require continued dependency review.
+
+The copyright, license, and patent grant are reproduced in
+LIBWEBP-LICENSE.txt and LIBWEBP-PATENTS.txt alongside this file.
